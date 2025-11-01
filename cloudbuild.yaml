@@ -32,8 +32,11 @@ steps:
         '--platform',
         'managed',
         '--allow-unauthenticated',
+        '--service-account',
+        'cloud-run@arctic-anvil-476315-v3.iam.gserviceaccount.com',
       ]
 images:
   - 'us-central1-docker.pkg.dev/arctic-anvil-476315-v3/jiq25-landingpage-video/jiq25-landingpage-video:$COMMIT_SHA'
+serviceAccount: 'cloud-build@arctic-anvil-476315-v3.iam.gserviceaccount.com'
 options:
   logging: CLOUD_LOGGING_ONLY
