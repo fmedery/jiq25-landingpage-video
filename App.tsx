@@ -27,10 +27,10 @@ const App: React.FC = () => {
                 </div>
                 <div className="flex flex-col items-center text-center">
                     <LogoIcon />
-                    <h1 className="text-3xl sm:text-4xl font-bold tracking-tight" style={{ fontFamily: "'Orbitron', sans-serif" }}>
+                    <h1 className="text-5xl sm:text-6xl font-bold tracking-tight" style={{ fontFamily: "'Orbitron', sans-serif" }}>
                         {t('title')}
                     </h1>
-                    <p className="mt-4 text-lg text-gray-300" style={{ fontFamily: "'Raleway', sans-serif" }}>
+                    <p className="mt-4 text-2xl text-gray-300" style={{ fontFamily: "'Raleway', sans-serif" }}>
                         {t('subtitle')}
                     </p>
                 </div>
