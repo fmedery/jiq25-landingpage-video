@@ -1,14 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import qrCode from '/assets/qrcode.png';
+import googleLogo from '/assets/google-logo.png';
 
-const LogoIcon: React.FC = () => (
-    <svg className="w-16 h-16 text-white mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-        <path d="M2 17l10 5 10-5"></path>
-        <path d="M2 12l10 5 10-5"></path>
-    </svg>
-);
+const LogoIcon: React.FC = () => {
+    return <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo" className="w-16 h-16 mb-4" />;
+};
 
 const App: React.FC = () => {
     const { t, i18n } = useTranslation();
