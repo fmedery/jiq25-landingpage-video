@@ -14,7 +14,7 @@ steps:
     args:
       [
         'push',
-        'us-central1-docker.pkg.dev/arctic-anvil-476315-v3/cloud-run-source-deploy/jiq25-landingpage-video:$COMMIT_SHA',
+        'us-central1-docker.pkg.dev/arctic-anvil-476315-v3/jiq25-landingpage-video/jiq25-landingpage-video:$COMMIT_SHA',
       ]
 
   # Deploy container image to Cloud Run
