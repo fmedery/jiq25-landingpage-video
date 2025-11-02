@@ -11,7 +11,7 @@ RUN npm run build
 FROM node:22-slim
 WORKDIR /app
 RUN apt-get update && apt-get upgrade -y
-COPY --from=build /app/dist/landingpage ./
+COPY --from=build /app/dist ./dist
 RUN npm install serve
 EXPOSE 3000
-CMD ["npx", "serve", "-s", "."]
+CMD ["npx", "serve", "-s", "dist"]
