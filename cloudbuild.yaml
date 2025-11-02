@@ -24,7 +24,7 @@ steps:
       [
         'run',
         'deploy',
-        'demo-jiq25-landingpage',
+        'demo-jiq2025-landingpage',
         '--image',
         'us-central1-docker.pkg.dev/arctic-anvil-476315-v3/jiq25-landingpage-video/jiq25-landingpage-video:$COMMIT_SHA',
         '--region',
